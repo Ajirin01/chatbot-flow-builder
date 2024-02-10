@@ -1,0 +1,560 @@
+[
+    {
+        "id": 1,
+        "title": "Ecommerce Help Bot 1",
+        "flow": {
+            "id": 1,
+            "text": "How can I help you? 1",
+            "options": ["Placing order", "Tracking order", "Request refund"],
+            "ends": false,
+            "starts": true,
+            "next": {},
+            "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+            "content": [],
+            "conditions": [
+                {
+                "selectedOption": "Placing order",
+                "content": {
+                    "id": 2,
+                    "text": "Here are our amazing products, which one would you like to order?",
+                    "options": ["Product 1", "Product 2", "Product 3"],
+                    "ends": false,
+                    "starts": false,
+                    "next": {},
+                    "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                    "conditions": [
+                    {
+                        "selectedOption": "Product 1",
+                        "content": {
+                        "id": 5,
+                        "text": "You have selected Product 1, would you like to proceed to checkout?",
+                        "options": ["Yes", "No, I will checkout later"],
+                        "ends": false,
+                        "starts": false,
+                        "next": {},
+                        "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                        "conditions": [
+                            {
+                            "selectedOption": "Yes",
+                            "content": {
+                                "id": 22442,
+                                "text": "Please provide your shipping detail: Address, phone number, and email",
+                                "options": [],
+                                "conditions": [],
+                                "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                                "ends": false,
+                                "starts": false,
+                                "next": {
+                                "id": 12332,
+                                "text": "We have received your order and we will be shipping to your address after payment is confirmed.",
+                                "options": [],
+                                "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                                "conditions": [],
+                                "ends": false,
+                                "starts": false,
+                                "next": {}
+                                }
+                            }
+                            },
+                            {
+                            "selectedOption": "No, I will checkout later",
+                            "content": {
+                                "id": 2036783,
+                                "text": "Here are our amazing products, which one would you like to order?",
+                                "options": [],
+                                "ends": false,
+                                "starts": false,
+                                "next": {},
+                                "rerun": 2,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                                "conditions": []
+                            }
+                            }
+                        ]
+                        }
+                    },
+                    {
+                        "selectedOption": "Product 2",
+                        "content": {
+                        "id": 204200,
+                        "text": "You have selected Product 2, would you like to proceed to checkout?",
+                        "options": ["Yes", "No, I will checkout later"],
+                        "ends": false,
+                        "starts": false,
+                        "next": {},
+                        "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                        "conditions": [
+                            {
+                            "selectedOption": "Yes",
+                            "content": {
+                                "id": 9729,
+                                "text": "Please provide your shipping detail: Address, phone number, and email",
+                                "options": [],
+                                "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                                "conditions": [],
+                                "order": 4,
+                                "ends": false,
+                                "starts": false,
+                                "next": {
+                                    "id": 1202832,
+                                    "text": "We have received your order and we will be shipping to your address after payment is confirmed.",
+                                    "options": [],
+                                    "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                                    "conditions": [],
+                                    "ends": false,
+                                    "starts": false,
+                                    "next": {}
+                                }
+                            }
+                            }
+                        ]
+                        }
+                    },
+                    {
+                        "selectedOption": "Product 3",
+                        "content": {
+                        "id": 456789876,
+                        "text": "You have selected Product 3, would you like to proceed to checkout?",
+                        "options": ["Yes", "No, I will checkout later"],
+                        "ends": false,
+                        "starts": false,
+                        "next": {},
+                        "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                        "conditions": [
+                            {
+                            "selectedOption": "Yes",
+                            "content": {
+                                "id": 202789,
+                                "text": "Please provide your shipping detail: Address, phone number, and email",
+                                "options": [],
+                                "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                                "conditions": [],
+                                "ends": false,
+                                "starts": false,
+                                "next": {
+                                    "id": 1772332,
+                                    "text": "We have received your order and we will be shipping to your address after payment is confirmed.",
+                                    "options": ["I would like to perform other actions", "I am fine for now"],
+                                    "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                                    "next": {},
+                                    "ends": false,
+                                    "starts": false,
+                                    "conditions": [
+                                        {
+                                        "selectedOption": "I would like to perform other actions",
+                                        "content": {
+                                            "id": 7879890860,
+                                            "text": "",
+                                            "options": [],
+                                            "next": {},
+                                            "ends": false,
+                                            "starts": false,
+                                            "rerun": 1,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                                            "conditions": []
+                                        }
+                                        },
+                                        {
+                                        "selectedOption": "I am fine for now",
+                                        "content": {
+                                            "id": 32435432523,
+                                            "text": "Nice, I am glad I can help. see you soon!",
+                                            "options": [],
+                                            "next": {},
+                                            "ends": true,
+                                            "starts": false,
+                                            "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                                            "conditions": []
+                                        }
+                                        }
+                                    ]
+                                }
+                            }
+                            }
+                        ]
+                        }
+                    }
+                    ]
+                }
+                },
+                {
+                "selectedOption": "Tracking order",
+                "content": {
+                    "id": 3,
+                    "text": "To track your order please enter your order tracking ID",
+                    "options": [],
+                    "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                    "ends": false,
+                    "starts": false,
+                    "next": {
+                        "id": 280294,
+                        "text": "Your order is currently in Ibadan",
+                        "options": [],
+                        "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                        "next": {},
+                        "ends": false,
+                        "starts": false,
+                        "conditions": []
+                    },
+                    "conditions": []
+                }
+                },
+                {
+                "selectedOption": "Request refund",
+                "content": {
+                    "id": 4,
+                    "text": "We are sorry for the inconvenience. Please provide more details so that we can process your refund",
+                    "options": [],
+                    "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                    "ends": false,
+                    "starts": false,
+                    "next": {
+                    "id": 999998,
+                    "text": "We have received your complaint and we will review and get back to you in 24 hours",
+                    "options": [],
+                    "rerun": null,
+"collapsed": false,
+"showMenu": false,
+"parentId": null,
+                    "next": {},
+                    "ends": true,
+                    "starts": false,
+                    "conditions": []
+                    },
+                    "conditions": []
+                }
+                }
+            ]
+        },
+        "messages": []
+    },
+
+    {
+        "id": 2,
+        "title": "Ecommerce Help Bot 2",
+        "flow": {
+            "id": 1,
+            "text": "How can I help you? 1",
+            "options": ["Placing order", "Tracking order", "Request refund"],
+            "ends": false,
+            "starts": true,
+            "next": {},
+            "rerun": null,
+            "collapsed": false,
+            "showMenu": false,
+            "parentId": null,
+            "content": [],
+            "conditions": [
+                {
+                    "selectedOption": "Placing order",
+                    "content": {
+                        "id": 2,
+                        "text": "Here are our amazing products, which one would you like to order?",
+                        "options": ["Product 1", "Product 2", "Product 3"],
+                        "ends": false,
+                        "starts": false,
+                        "next": {},
+                        "rerun": null,
+                        "collapsed": false,
+                        "showMenu": false,
+                        "parentId": 1,
+                        "conditions": [
+                            {
+                                "selectedOption": "Product 1",
+                                "content": {
+                                    "id": 5,
+                                    "text": "You have selected Product 1, would you like to proceed to checkout?",
+                                    "options": ["Yes", "No, I will checkout later"],
+                                    "ends": false,
+                                    "starts": false,
+                                    "next": {},
+                                    "rerun": null,
+                                    "collapsed": false,
+                                    "showMenu": false,
+                                    "parentId": 2,
+                                    "conditions": [
+                                        {
+                                            "selectedOption": "Yes",
+                                            "content": {
+                                                "id": 22442,
+                                                "text": "Please provide your shipping detail: Address, phone number, and email",
+                                                "options": [],
+                                                "conditions": [],
+                                                "rerun": null,
+                                                "collapsed": false,
+                                                "showMenu": false,
+                                                "parentId": 5,
+                                                "ends": false,
+                                                "starts": false,
+                                                "next": {
+                                                    "id": 12332,
+                                                    "text": "We have received your order and we will be shipping to your address after payment is confirmed.",
+                                                    "options": [],
+                                                    "rerun": null,
+                                                    "collapsed": false,
+                                                    "showMenu": false,
+                                                    "parentId": 5,
+                                                    "conditions": [],
+                                                    "ends": false,
+                                                    "starts": false,
+                                                    "next": {}
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "selectedOption": "No, I will checkout later",
+                                            "content": {
+                                                "id": 2036783,
+                                                "text": null,
+                                                "options": [],
+                                                "ends": false,
+                                                "starts": false,
+                                                "next": {},
+                                                "rerun": 2,
+                                                "collapsed": false,
+                                                "showMenu": false,
+                                                "parentId": 5,
+                                                "conditions": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "selectedOption": "Product 2",
+                                "content": {
+                                    "id": 92339424,
+                                    "text": "You have selected Product 2, would you like to proceed to checkout?",
+                                    "options": ["Yes", "No, I will checkout later"],
+                                    "ends": false,
+                                    "starts": false,
+                                    "next": {},
+                                    "rerun": null,
+                                    "collapsed": false,
+                                    "showMenu": false,
+                                    "parentId": 2,
+                                    "conditions": [
+                                        {
+                                            "selectedOption": "Yes",
+                                            "content": {
+                                                "id": 22442,
+                                                "text": "Please provide your shipping detail: Address, phone number, and email",
+                                                "options": [],
+                                                "conditions": [],
+                                                "rerun": null,
+                                                "collapsed": false,
+                                                "showMenu": false,
+                                                "parentId": 92339424,
+                                                "ends": false,
+                                                "starts": false,
+                                                "next": {
+                                                    "id": 12332,
+                                                    "text": "We have received your order and we will be shipping to your address after payment is confirmed.",
+                                                    "options": [],
+                                                    "rerun": null,
+                                                    "collapsed": false,
+                                                    "showMenu": false,
+                                                    "parentId": 92339424,
+                                                    "conditions": [],
+                                                    "ends": false,
+                                                    "starts": false,
+                                                    "next": {}
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "selectedOption": "No, I will checkout later",
+                                            "content": {
+                                                "id": 2036783,
+                                                "text": null,
+                                                "options": [],
+                                                "ends": false,
+                                                "starts": false,
+                                                "next": {},
+                                                "rerun": 2,
+                                                "collapsed": false,
+                                                "showMenu": false,
+                                                "parentId": 92339424,
+                                                "conditions": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "selectedOption": "Product 3",
+                                "content": {
+                                    "id": 5097658697,
+                                    "text": "You have selected Product 3, would you like to proceed to checkout?",
+                                    "options": ["Yes", "No, I will checkout later"],
+                                    "ends": false,
+                                    "starts": false,
+                                    "next": {},
+                                    "rerun": null,
+                                    "collapsed": false,
+                                    "showMenu": false,
+                                    "parentId": 2,
+                                    "conditions": [
+                                        {
+                                            "selectedOption": "Yes",
+                                            "content": {
+                                                "id": 22442,
+                                                "text": "Please provide your shipping detail: Address, phone number, and email",
+                                                "options": [],
+                                                "conditions": [],
+                                                "rerun": null,
+                                                "collapsed": false,
+                                                "showMenu": false,
+                                                "parentId": 5097658697,
+                                                "ends": false,
+                                                "starts": false,
+                                                "next": {
+                                                    "id": 12332,
+                                                    "text": "We have received your order and we will be shipping to your address after payment is confirmed.",
+                                                    "options": [],
+                                                    "rerun": null,
+                                                    "collapsed": false,
+                                                    "showMenu": false,
+                                                    "parentId": 5097658697,
+                                                    "conditions": [],
+                                                    "ends": false,
+                                                    "starts": false,
+                                                    "next": {}
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "selectedOption": "No, I will checkout later",
+                                            "content": {
+                                                "id": 2036783,
+                                                "text": null,
+                                                "options": [],
+                                                "ends": false,
+                                                "starts": false,
+                                                "next": {},
+                                                "rerun": 2,
+                                                "collapsed": false,
+                                                "showMenu": false,
+                                                "parentId": 5097658697,
+                                                "conditions": []
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "selectedOption": "Tracking order",
+                    "content": {
+                        "id": 3,
+                        "text": "To track your order please enter your order tracking ID",
+                        "options": [],
+                        "rerun": null,
+                        "collapsed": false,
+                        "showMenu": false,
+                        "parentId": null,
+                        "ends": false,
+                        "starts": false,
+                        "next": {
+                            "id": 280294,
+                            "text": "Your order is currently in Ibadan",
+                            "options": [],
+                            "rerun": null,
+                            "collapsed": false,
+                            "showMenu": false,
+                            "parentId": null,
+                            "next": {},
+                            "ends": false,
+                            "starts": false,
+                            "conditions": []
+                        },
+                        "conditions": []
+                    }
+                },
+                {
+                    "selectedOption": "Request refund",
+                    "content": {
+                        "id": 4,
+                        "text": "We are sorry for the inconvenience. Please provide more details so that we can process your refund",
+                        "options": [],
+                        "rerun": null,
+                        "collapsed": false,
+                        "showMenu": false,
+                        "parentId": null,
+                        "ends": false,
+                        "starts": false,
+                        "next": {
+                            "id": 999998,
+                            "text": "We have received your complaint and we will review and get back to you in 24 hours",
+                            "options": [],
+                            "rerun": null,
+                            "collapsed": false,
+                            "showMenu": false,
+                            "parentId": null,
+                            "next": {},
+                            "ends": true,
+                            "starts": false,
+                            "conditions": []
+                        },
+                        "conditions": []
+                    }
+                }
+            ]
+        },
+        "messages": []
+    }
+    
+
+  ]
+  
